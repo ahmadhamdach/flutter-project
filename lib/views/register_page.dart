@@ -51,10 +51,14 @@ class RegisterPage extends StatelessWidget {
                 ),
                 onPressed: () {
                   // Simulate registration success
-                  Get.snackbar("Success", "Account created successfully",
-                      snackPosition: SnackPosition.BOTTOM,
-                      backgroundColor: customGreen,
-                      colorText: Colors.white);
+                  Get.snackbar(
+                    "Success",
+                    "Account created successfully",
+                    snackPosition: SnackPosition.BOTTOM,
+                    backgroundColor: customGreen,
+                    colorText: Colors.white,
+                    margin: const EdgeInsets.only(top: 10),
+                  );
                   Get.offAllNamed('/home');
                 },
                 child: const Text("Register", style: TextStyle(color: Colors.white, fontSize: 18)),
